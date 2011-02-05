@@ -348,9 +348,9 @@ Symbols matching the text at point are put first in the completion list."
     (shell-command-to-string
      (concat
       (format textmate-find-files-command root)
-      " | grep -vE '"
+      " | grep -vE \""
       textmate-gf-exclude
-      "' | sed 's:./::'")) "\n" t))
+      "\" | sed 's:./::'")) "\n" t))
 
 ;; http://snipplr.com/view/18683/stringreplace/
 (defun textmate-string-replace (this withthat in)
